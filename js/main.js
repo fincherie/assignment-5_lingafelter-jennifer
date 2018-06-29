@@ -12,17 +12,11 @@ function myFunction () {
   document.getElementById("ddddd").innerHTML = "You clicked " + y.value;
 }
 */
-var x = document.getElementById("header");
+var clicks = 0;
+var header = document.getElementById("header");
 
-x.addEventListener("click", myFunction);
+header.addEventListener("click", myFunction);
 
 function myFunction () {
-  document.getElementById("paragraph").innerHTML = "This is click number ";
-}
-//<button onclick="myFunction(event)">Click count:</button>
-
-
-function clickcount(event) {
-    var y = event.detail;
-document.getElementById("myInput").value = y;
+  document.getElementById("paragraph").innerHTML = "This is click number " + (++clicks);
 }
