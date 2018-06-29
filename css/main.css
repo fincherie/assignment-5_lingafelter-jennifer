@@ -1,0 +1,32 @@
+body {
+  background-color: #e6e6ff;
+}
+
+.container {
+  margin: auto;
+  text-align: center;
+}
+
+.form {
+  width: 50%;
+    background-color: #ccccff;
+    padding: 20px;
+    margin: auto;
+    border-radius: 2px;
+    border-color: #6666ff;
+    border-style: groove;
+}
+input {
+  display: flex;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+label {
+
+  margin: auto;
+}
+textarea {
+  margin:auto;
+  display: flex;
+}

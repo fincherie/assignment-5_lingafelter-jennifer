@@ -2,17 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Assignment 5</title>
     <meta name="description" content="">
-
     <link rel="stylesheet" href="css/vendor/normalize.min.css">
     <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-  <h1 id="header">Click Me</h1>
-    <p id="paragraph"></p>
+      </head>
+        <body>
+          <div class="container">
 
+            <h1 id="header">Click Me</h1>
+              <p id="paragraph"></p>
+<form action="/action_page.php" class="form">
+            <label for="firstname">First Name</label>
+            <input type="text" name="firstname" />
+            <label for="lastname">Last Name</label>
+              <input type="text" name="lastname" />
+              <label for="email" name="email">Email</label>
+              <input type="email" name="email" />
+            <input type="submit" value="Submit" />
+            <label for="comments">Comments</label>
+            <textarea name="comments" placeholder="Enter comments"></textarea>
+              </form>
 
-    <script src="js/main.js"></script>
-</body>
+          </div>
+            <script src="js/main.js"></script>
+        </body>
 </html>
