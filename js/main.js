@@ -1,22 +1,14 @@
-/*var paragraph = getElementById('id')
-function modifyHTML () {
- var heading = document.getElementById('h1');
-  console.log("hello");
+var first = document.getElementById("firstname");
+var last =  document.getElementById("lastname");
+var email = document.getElementById("email");
+var comments = document.getElementById("comments");
 
+document.getElementById("submit").addEventListener("click", prevent);
 
-paragraph.addEventListener("click", modifyHTML);
-
-
-function myFunction () {
-  var x = document.getElementById("h1");
-  document.getElementById("ddddd").innerHTML = "You clicked " + y.value;
-}
-*/
-var clicks = 0;
-var header = document.getElementById("header");
-
-header.addEventListener("click", myFunction);
-
-function myFunction () {
-  document.getElementById("paragraph").innerHTML = "This is click number " + (++clicks);
+function prevent () {
+  event.preventDefault()
+  console.log("The firstName is: " + first.value);
+  console.log("The lastName is: " + last.value);
+  console.log("The email is: " + email.value);
+  console.log("The message is: " + comments.value);
 }

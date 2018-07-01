@@ -1,5 +1,7 @@
 body {
   background-color: #e6e6ff;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
 }
 
 .container {
@@ -8,7 +10,7 @@ body {
 }
 
 .form {
-  width: 50%;
+    width: 50%;
     background-color: #ccccff;
     padding: 20px;
     margin: auto;
@@ -18,15 +20,33 @@ body {
 }
 input {
   display: flex;
+  width: 50%;
   margin: auto;
   margin-bottom: 15px;
+  font-size: .7rem;
+  padding: 5px;
 }
 
 label {
-
+  width: 50%;
   margin: auto;
 }
+
 textarea {
+  width: 50%;
   margin:auto;
   display: flex;
+  font-size: .7rem;
+}
+
+input[type=submit] {
+    width: 100px;
+    margin-top: 20px;
+    background-color: #ffffff;
+    padding: 5px;
+    text-align: center;
+}
+
+input[type=submit]:hover {
+  background-color: #3333ff;
 }
