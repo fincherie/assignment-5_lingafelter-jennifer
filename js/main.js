@@ -1,14 +1,25 @@
-var first = document.getElementById("firstname");
-var last =  document.getElementById("lastname");
-var email = document.getElementById("email");
-var comments = document.getElementById("comments");
+//This listens for a mouseover on the beach image and displays a Welcome message
 
-document.getElementById("submit").addEventListener("click", prevent);
+document.getElementById("beach").addEventListener("mouseover", display);
 
-function prevent () {
-  event.preventDefault()
-  console.log("The firstName is: " + first.value);
-  console.log("The lastName is: " + last.value);
-  console.log("The email is: " + email.value);
-  console.log("The message is: " + comments.value);
+function display () {
+  document.getElementById("pcustom").innerHTML = "Welcome to the Beach!";
+}
+
+document.getElementById("pcustom").addEventListener("mouseout", removeDisplay);
+
+function removeDisplay () {
+  document.getElementById("pcustom").innerHTML = "";
+}
+//This event listens for a click so a coupon code is displayed
+document.getElementById("header3").addEventListener("click", code);
+
+function code () {
+  document.getElementById("p2custom").innerHTML = "CODE 15OFF";
+}
+//This event listens for a click to show what you can do at the beach
+document.getElementById("activities").addEventListener("click", picture);
+
+function picture () {
+  document.getElementById("p3custom").innerHTML = "<img src = img/relax.jpg>";
 }
